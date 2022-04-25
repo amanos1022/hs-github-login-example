@@ -15,7 +15,7 @@ const CreateAccount: React.FC<CreateAccountParams> = (props): ReactElement => {
 
   useEffect(() => {
     axios.post(
-      'https://7314-150-220-74-84.ngrok.io/user',
+      'https://7314-150-220-74-84.ngrok.io/users',
       { code: searchParams.get('code') },
     ).then(({ data }) => { setLoginData(data) });
   }, [])
