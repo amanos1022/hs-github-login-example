@@ -14,9 +14,9 @@ const CreateAccount: React.FC = (): ReactElement => {
       '/api/users',
       { 
         code: searchParams.get('code'),
-        client_id: '193900',
-        client_secret: 'b3319ccda018b2be2fade986d476afd6c7be4973',
-        redirect_uri: 'https://db31-65-201-88-74.ngrok.io/',
+        // client_id: '193900',
+        // client_secret: 'b3319ccda018b2be2fade986d476afd6c7be4973',
+        // redirect_uri: 'https://db31-65-201-88-74.ngrok.io/',
       },
     ).then(({ data }) => { 
       localStorage.setItem('user', JSON.stringify(data))

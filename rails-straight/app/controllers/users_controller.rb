@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def create
     begin
+      # S
       res = HTTP[:accept => "application/json"]
         .post('https://github.com/login/oauth/access_token', :json => { 
           :client_id => 'Iv1.8fb41a270ee0fd0d',

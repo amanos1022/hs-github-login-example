@@ -12,8 +12,9 @@ module User
       def call(code)
         access_token = @get_access_token.call(code)
 
-        user_data = @get_user_data.call(access_token),
-        user_data_fromatted = FormatGithubResponse.call(
+        user_data = @get_user_data.call(access_token)
+
+        user_data_formatted = FormatGithubResponse.call(
           user_data,
           access_token
         )
