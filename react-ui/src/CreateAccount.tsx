@@ -28,7 +28,8 @@ const CreateAccount: React.FC = (): ReactElement => {
 
   return (
     <>
-      <div>hi {loginData.githubUsername}! Last step is to verify your account. An email has been sent to {loginData.email}. You know the drill :)</div>
+      <h1>Hi <strong>{loginData.githubUsername}</strong>!</h1> 
+      <h2>Last step is to verify your account. An email has been sent to <strong>{loginData.email}</strong>. You know the drill :)</h2>
       <Link to={'/'}>Go to your home</Link>
     </>
 

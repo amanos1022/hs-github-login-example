@@ -2,7 +2,10 @@ module User
   module Create
     module GetAccessToken
       class GetAccessToken
-        def initialize(get_response = GetResponse.new, error_handler = ResponseBodyErrorHandler.new)
+        def initialize(
+          get_response = GetResponse.new,
+          error_handler = ResponseBodyErrorHandler.new
+        )
           @get_response = get_response
           @error_handler = error_handler
         end

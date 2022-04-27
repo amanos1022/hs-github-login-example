@@ -12,11 +12,16 @@ const Login: React.FC<LoginParams> = ({
   const scope = 'user';
 
   return (
-    <a
-      href={`https://github.com/login/oauth/authorize?client_id=${clientId}&scope=${scope}&redirect_uri=${redirectUri}`}
-    >
-      Sign in with Github
-    </a>
+    <>
+      <h1>Welcome to our site!</h1>
+      <h2>Login to continue</h2>
+      <a
+        href={`https://github.com/login/oauth/authorize?client_id=${clientId}&scope=${scope}&redirect_uri=${redirectUri}`}
+      >
+        Sign in with Github
+      </a>
+    </>
+    
   )
 };
 

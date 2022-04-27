@@ -54,8 +54,10 @@
 
 # Why Functional-style Programming is Becoming so Popular
 - You can do anything with functions that you can do with classes, except inheritence which is becoming more and more discouraged.
+- Classes are just collections of methods and/or variables
 - Good parts of Class-based programming:
   - encapsulation
   - Interfaces/contracts
   - Dependency Injection
+  - Polymorphism
 
