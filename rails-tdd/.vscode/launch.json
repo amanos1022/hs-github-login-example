@@ -15,7 +15,6 @@
       "pathToBundler": "${workspaceFolder}/bin/bundle",
       "rdbgPath": "${workspaceFolder}/bin/rdbg",
       "args": [
-        // "${workspaceRoot}/bin/rails",
         "s"
       ],
       "env": {

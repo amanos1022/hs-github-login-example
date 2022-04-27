@@ -5,7 +5,7 @@ import createUser from './createUser/createUser';
 const app = express();
 app.use(express.json())
 
-app.post('/user', async (req: Request, res: Response) => {
+app.post('/api/user', async (req: Request, res: Response) => {
   res.json(await createUser(req.body.code));
 });
 

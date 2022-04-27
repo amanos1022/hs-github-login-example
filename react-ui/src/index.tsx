@@ -10,8 +10,7 @@ const root = ReactDOM.createRoot(
 );
 
 const clientId = 'Iv1.8fb41a270ee0fd0d'
-const clientSecret = '52df2e4abf3754eae30430e9995897589b88ea1a'
-const home = 'https://7314-150-220-74-84.ngrok.io'
+const home = 'https://db31-65-201-88-74.ngrok.io'
 
 root.render(
   <Router>
@@ -28,11 +27,7 @@ root.render(
       <Route
         path="/create-account"
         element={
-          <CreateAccount
-            client_id={clientId}
-            client_secret={clientSecret}
-            redirect_uri={home}
-          />
+          <CreateAccount />
         }
       />
     </Routes>

@@ -1,8 +1,21 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
 
-const Home: React.FC = (): ReactElement => {
+const Home: React.FC<{userData: any}> = ({userData}): ReactElement => {
+  const [redirect, setRedirect] = useState(false);
+
+  if (redirect) {
+    localStorage.removeItem('user')
+    window.location.reload();
+  }
+
   return (
-    <div>Welcome home champ</div>
+    <div>
+      <img src={userData.avatar_url} width={200}/>
+      <div>
+        {`Welcome home ${userData.name}. Here's your bio: ${userData.bio}`}
+        <button onClick={() => setRedirect(true)}>Log out</button>
+      </div>
+    </div>
   );
 };
 
